@@ -1,0 +1,35 @@
+
+[
+  {
+    "inputs": [{ "internalType": "string", "name": "ipfsMetadata", "type": "string" }],
+    "name": "registerNode",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "string", "name": "ipfsMetadata", "type": "string" }],
+    "name": "updateNode",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "address", "name": "nodeAddr", "type": "address" }],
+    "name": "getNode",
+    "outputs": [
+      {
+        "components": [
+          { "internalType": "address", "name": "owner", "type": "address" },
+          { "internalType": "string", "name": "ipfsMetadata", "type": "string" },
+          { "internalType": "uint256", "name": "lastUpdated", "type": "uint256" }
+        ],
+        "internalType": "struct GaiaNodeRegistry.Node",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
